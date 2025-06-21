@@ -70,6 +70,15 @@ p {
     text-align: left;
 }
 
+/* NEW: Style for the tier info text */
+#tier-info {
+    text-align: center;
+    font-style: italic;
+    color: #a7a7a7;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
 .link-box {
     margin-bottom: 20px;
 }
