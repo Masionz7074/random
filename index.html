@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Link Generator</title>
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Roblox Link Generator</h1>
+        <p>Click the button to generate a random user profile and game link.</p>
+        
+        <button id="generateBtn">Generate Links</button>
+
+        <!-- This container will hold the generated links. It's hidden at first. -->
+        <div id="results-container" class="hidden">
+            <div class="link-box">
+                <h2>User Profile</h2>
+                <a id="userLink" href="#" target="_blank" rel="noopener noreferrer">...</a>
+            </div>
+            
+            <div class="link-box">
+                <h2>Game</h2>
+                <a id="gameLink" href="#" target="_blank" rel="noopener noreferrer">...</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

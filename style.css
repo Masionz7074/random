@@ -1,0 +1,107 @@
+/* Basic Reset and Font Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Main Content Container */
+.container {
+    background-color: #16213e; /* Darker container background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    border: 1px solid #0f3460;
+}
+
+h1 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a7a7a7;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* The Generate Button */
+#generateBtn {
+    background: linear-gradient(45deg, #e94560, #ff7b54);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#generateBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+}
+
+#generateBtn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* Results Area */
+#results-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.link-box {
+    margin-bottom: 20px;
+}
+
+.link-box:last-child {
+    margin-bottom: 0;
+}
+
+.link-box h2 {
+    font-size: 16px;
+    color: #c0c0c0;
+    margin: 0 0 8px 0;
+    border-left: 3px solid #e94560;
+    padding-left: 10px;
+}
+
+/* The Generated Links */
+.link-box a {
+    color: #50c8ff; /* Bright blue for links */
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    word-break: break-all; /* Prevents long links from overflowing */
+    transition: color 0.2s ease;
+}
+
+.link-box a:hover {
+    color: #82daff;
+    text-decoration: underline;
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none;
+}
