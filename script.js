@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // A higher weight means that tier is more likely to be chosen.
     // YOU CAN CUSTOMIZE THESE VALUES!
     const TIERS = [
-        { name: 'Common',    min: 1,           max: 10000000,    weight: 50 }, // 1 - 10 Million
-        { name: 'Uncommon',  min: 10000001,    max: 500000000,   weight: 30 }, // 10M - 500 Million
-        { name: 'Rare',      min: 500000001,   max: 1500000000,  weight: 15 }, // 500M - 1.5 Billion
-        { name: 'Legendary', min: 1500000001,  max: 4600000000,  weight: 5  }  // 1.5B - 4.6 Billion
+        { name: '1-10m',    min: 1,           max: 10000000,    weight: 50 }, // 1 - 10 Million
+        { name: '10-500m',  min: 10000001,    max: 500000000,   weight: 30 }, // 10M - 500 Million
+        { name: '500m-1.5b',      min: 500000001,   max: 1500000000,  weight: 15 }, // 500M - 1.5 Billion
+        { name: '1.5b-4.6b', min: 1500000001,  max: 4600000000,  weight: 5  }  // 1.5B - 4.6 Billion
     ];
 
     // Calculate the total weight of all tiers combined.
